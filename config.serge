@@ -54,15 +54,15 @@ sync
             add_unversioned                     YES
 
             clone_params                        --depth 1
-            email                               l10n@mycompany.com
-            name                                L10N Robot
+            email                               sponaproz@gmail.com
+            name                                mikhaylov-ya
 
             local_path                          data
 
             # Set this parameter to be your Git clone URL. If your repository
             # main branch is not called 'master', you need to specify it
             # explicitly at the end of the URL, like this: #main
-            remote_path                         git@github.com:mikhaylov-ya/smartcat-serge-bootstrap.git
+            remote_path                         https://github.com/mikhaylov-ya/smartcat-serge-bootstrap.git#v2
         }
     }
 }
