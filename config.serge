@@ -140,7 +140,7 @@ inc
 
                         then
                         {
-                            return              NO
+                            return              YES
                         }
                     }
 
@@ -165,19 +165,25 @@ jobs
     {
         @inherit                                .#inc/common-job-settings
 
-        name                                    Localize JavaScript files
-        id                                      js
+        name                                    Localize Yaml files
+        id                                      yaml
 
         source_dir                              data/en
         source_process_subdirs                  YES
-        source_match                            \.js$
+        source_match                            \.yml$
         output_file_path                        data/%LANG%/%FILE%
 
         use_keys_as_context                     YES
 
         parser
         {
-            plugin                              parse_js
+            plugin                              parse_yaml
+            data
+            {
+               
+                expand_aliases       NO
+                yaml_kind          generic
+            }
         }
     }
 }

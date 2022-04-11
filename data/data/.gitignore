@@ -3,6 +3,7 @@
 *.local.*
 
 /.ssh
+/data
 /db
 /ts
 /.ash_history
