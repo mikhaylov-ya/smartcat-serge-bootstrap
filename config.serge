@@ -15,14 +15,14 @@ sync
             You will know the server your account is on by signing into your account
             and looking at the URL.
             */
-            base_url                            https://smartcat.ai
+            base_url                            https://smartcat.com
 
             /*
             Provide your account ID as it is displayed on
             your `Settings > API` page once you sign into
             your Smartcat account.
             */
-            account_id                          12345678-abcd-9876-5432-abcdef012345
+            account_id                          f9b304da-cbc9-4197-b590-fcffe90c6ca7
 
             /*
             Go to `Settings > API` page in your account,
@@ -30,13 +30,13 @@ sync
             e.g. 'Serge', and the auto-generated secret part
             of the key is what needs to be added here.
             */
-            token                               1_AaBbCcDdEeFfGgHhIiJjKkLlM
+            token                               1_fMk83qr4PM9QgiXHkV7mLIfd8
 
             # Project to synchronize data with. To get the ID, navigate to the
             # target project and take it from the URL. For example, if the URL is
             # https://us.smartcat.ai/projects/01234567-890a-bcde-f012-34567890abcd/files?documentPage=1
             # then the ID will be 01234567-890a-bcde-f012-34567890abcd
-            project_id                          01234567-890a-bcde-f012-34567890abcd
+            project_id                          4c29a91c-4745-4315-bee6-2dcd40dd2108
 
             # `--mode=current`   = download any translations, even unconfirmed ones (default).
             # `--mode=confirmed` = download segments at the confirmed stage
@@ -62,7 +62,7 @@ sync
             # Set this parameter to be your Git clone URL. If your repository
             # main branch is not called 'master', you need to specify it
             # explicitly at the end of the URL, like this: #main
-            remote_path                         git@github.com:my-company/my-project.git#main
+            remote_path                         git@github.com:mikhaylov-ya/smartcat-serge-bootstrap.git
         }
     }
 }
@@ -89,7 +89,7 @@ inc
         /*
         Destination (target) languages must be recognized by Smartcat.
         */
-        destination_languages                   de ru
+        destination_languages                   ru
 
         output_bom                              NO
 
